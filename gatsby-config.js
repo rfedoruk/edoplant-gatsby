@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `http://wpgatsbytestrun.local/graphql`,
+        url: `wp.rfedoruk.tech/graphql`,
       }
     },
     {
