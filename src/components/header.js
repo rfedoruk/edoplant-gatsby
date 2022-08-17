@@ -19,7 +19,7 @@ const Header = ({data}) => {
     }
   `)
 
-  console.log(categoryPages.allWpCategory);
+  // console.log(categoryPages.allWpCategory);
   return (
     <header
       style={{

@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/rfedoruk/edoplant-gatsby#readme",
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.1",
     "gatsby": "^4.20.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.20.0",
