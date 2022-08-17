@@ -30,10 +30,12 @@ const Header = ({data}) => {
         justifyContent: `space-between`,
       }}
     >
+      <Link to="/">Home</Link>
 
      {categoryPages.allWpCategory.edges.map(ele => {
-       console.log(ele);
-       return <Link to={ele.node.link}>{ele.node.name}</Link>
+      if(ele.node.name !== "Uncategorized"){
+        return <Link to={ele.node.link}>{ele.node.name}</Link>
+      }
      })} 
     </header>
   )
@@ -47,17 +49,4 @@ Header.defaultProps = {
   siteTitle: `Edoplant`,
 }
 
-// export const query = graphql`
-// query HeaderQuery {
-//   allWpCategory {
-//     edges {
-//       node {
-//         id
-//         link
-//         name
-//       }
-//     }
-//   }
-// }
-// `
-export default Header
+export default Header;
